@@ -225,6 +225,9 @@ function create_config( )
     "leave_ban",
     "bot_manager",
     "anti_link",
+    "pok",
+    "splugin",
+    "filterorg",
     "linkpv",
     "boobs",
     "time",
@@ -319,184 +322,116 @@ ch: @Nod32team
 
 ]],
     help_text = [[
-NOD32 Commands list :
- 
-1-banhammer list ^
- 
+E X T R E M E Commands list :
 !kk [username|id]
 (کیک کردن شخص (حتی با ریپلی)
-
 !bk [ username|id]
 (بن کردن افراد (حتی با ریپلی)
-
 !unbk [id]
 (انبن کردن افراد (همراه ایدی)
-
 !kkme
 خروج از گروه
-
-2-Statistics list ^
-
 !who
 لیست+ایدی همه اعضا
-
 !all
 دریافت اطلاعات کلی گروه
-
 !stats
 امار کلی گروه
-
 !mlist
 لیست مدیران گروه
-
 !bklist
 لیست اعضا بن شده
-
-3-Rate Member ^
-
 !sowner [id]
 (id ایجاد مدیر جدید (همراه 
-
 !pgp [username]
 (ایجاد ادمین جدید (همراه ریپلی)
-
 !dgp [username]
 (برکنار کردن ادمین (همراه ریپلی)
-
-4-General changes ^
-
 !namegp [name]
 ایجاد اسم جدید برای گروه
-
 !photogp
 ایجاد عکس جدید برای پروفایل گروه
-
 !set rules <text>
 ایجاد قانون جدید برای گروه
-
 !set about <text>
 ایجاد درباره گروه
-
 !setflood [value]
 حساسیت به اسپم در گروه
-
-5-View details ^
-
 !about
 درباره گروه
-
 !rgp
 قوانین گروه
-
-!settings
+!sgp
 دیدن تنظیمات فعلی گروه
-
 !help
 لیست دستورات ربات
-
-6-Security Group ^
-
 !lock member 
 قفل ورود اعضا جدید
-
 !lock join
 قفل ورود اعضا جدید توسط لینک
-
 !lock link
 قفل تبلیغات
-
 !lock name
 قفل اسم گروه
-
 !lock chat
 قفل چت ممنوع
-
 !lock leave
 قفل خروج=بن گروه
-
 !lock chat
 قفل چت ممنوع گروه
-
 !antibot enable 
 ورود ربات ها ممنوع
-
 !antibot disable
 ورود ربات ها ازاد
-
 !unlock 
 [*name*leave*member*photo]
 [chat*join*link*leave]
 باز کردن دستورات قفل شده
-
-7-Fun time ^
-
 !time country city
 ساعت کشور مورد نظر
-
 !loc country city
 مشخصات کشور و شهر مورد نظر
-
 !google
 سرچ مطلب مورد نظر از گوگل
- 
  !gps
  مکان کشور , شهر مورد نظر تحت گوگل
-
-8-Service Provider ^
-
-!setlink
+ !setlink
 ایجاد لینک جدید
-
 !getlink
 نمایش لینک گروه
-
 !linkpv
 فرستادن لینک گروه تو پیوی
 (حتما شماره ربات را سیو کنید)
-
 !invite username
 اضافه کردن شخص تو گروه
 (حتما شماره ربات را سیو کرده باشد)
-
-9-Member Profile and Group ^
-
 !owner
 مدیر گروه
-
 !id
 ایدی شخص مورد نظر
-
 !res [username]
 در اوردن ایدی شخص مورد نظر
-
 !info 
 مخشصات فرد مورد نظر
-
-!settings
+!sgp
 تنظیمات فعلی گروه
-
-10-bot number & support ^
-
-!botnumber
+!BOT
 دریافت شماره ربات
-
 !support
 دعوت سازنده ربات به گروه
 (در صورت وجود مشکل)
-
 !version
 ورژن ربات
-
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Developer: @unkownhacker
 توسعه دهنده
 
-channel: @extremerobos
+channel: @extremerTEAM
 کانال ما
 
-G00D LUCK ^_^
+E X T R E M E🌏 V2
 ]]
   }
   serialize_to_file(config, './data/config.lua')
