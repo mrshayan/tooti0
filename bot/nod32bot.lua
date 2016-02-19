@@ -243,7 +243,7 @@ function create_config( )
     "info",
     "lock_join"
     },
-	    sudo_users = {158990680},--Sudo users
+	    sudo_users = {179983320},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
@@ -323,16 +323,16 @@ NOD32 Commands list :
  
 1-banhammer list ^
  
-!kick [username|id]
+!kk [username|id]
 (کیک کردن شخص (حتی با ریپلی)
 
-!ban [ username|id]
+!bk [ username|id]
 (بن کردن افراد (حتی با ریپلی)
 
-!unban [id]
+!unbk [id]
 (انبن کردن افراد (همراه ایدی)
 
-!kickme
+!kkme
 خروج از گروه
 
 2-Statistics list ^
@@ -346,29 +346,29 @@ NOD32 Commands list :
 !stats
 امار کلی گروه
 
-!modlist
+!mlist
 لیست مدیران گروه
 
-!banlist
+!bklist
 لیست اعضا بن شده
 
 3-Rate Member ^
 
-!setowner [id]
+!sowner [id]
 (id ایجاد مدیر جدید (همراه 
 
-!promote [username]
+!pgp [username]
 (ایجاد ادمین جدید (همراه ریپلی)
 
-!demote [username]
+!dgp [username]
 (برکنار کردن ادمین (همراه ریپلی)
 
 4-General changes ^
 
-!setname [name]
+!namegp [name]
 ایجاد اسم جدید برای گروه
 
-!setphoto
+!photogp
 ایجاد عکس جدید برای پروفایل گروه
 
 !set rules <text>
@@ -385,7 +385,7 @@ NOD32 Commands list :
 !about
 درباره گروه
 
-!rules
+!rgp
 قوانین گروه
 
 !settings
@@ -444,10 +444,10 @@ NOD32 Commands list :
 
 8-Service Provider ^
 
-!newlink
+!setlink
 ایجاد لینک جدید
 
-!link
+!getlink
 نمایش لینک گروه
 
 !linkpv
@@ -490,10 +490,10 @@ NOD32 Commands list :
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
 
-Developer: @BehroozYaghi
+Developer: @unkownhacker
 توسعه دهنده
 
-channel: @Nod32team
+channel: @extremerobos
 کانال ما
 
 G00D LUCK ^_^
