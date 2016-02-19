@@ -123,7 +123,7 @@ local function run(msg,matches)
     	redis:set("bot:photo", "waiting")
     	return 'عکس رباتو بفرست بیاد'
     end
-    if matches[1] == "markread" then
+    if matches[1] == "read" then
     	if matches[2] == "on" then
     		redis:set("bot:markread", "on")
     		return "Mark read > on"
@@ -176,8 +176,8 @@ return {
 	"^[!/](import) (.*)$",
 	"^[!/](unblock) (%d+)$",
 	"^[!/](block) (%d+)$",
-	"^[!/](markread) (on)$",
-	"^[!/](markread) (off)$",
+	"^[!/](read) (on)$",
+	"^[!/](read) (off)$",
 	"^[!/](setbotphoto)$",
 	"%[(photo)%]",
 	"^[!/](contactlist)$",
