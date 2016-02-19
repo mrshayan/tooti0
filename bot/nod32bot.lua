@@ -222,6 +222,9 @@ function create_config( )
     "download_media",
     "invite",
     "all",
+    "tooti",
+    "echo",
+    "text",
     "leave_ban",
     "bot_manager",
     "anti_link",
@@ -422,6 +425,10 @@ E X T R E M E Commands list :
 (در صورت وجود مشکل)
 !version
 ورژن ربات
+!text
+تبدیل متن به عکس 
+!echo
+تکرار کلمات
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
