@@ -87,10 +87,10 @@ end
 if msg.text == "فافا" then
 	return "دیگه تو پی وی بات فوش ندی ها"
 end
-	if msg.text == "داشاب" then
+if msg.text == "داشاب" then
 	return "i love you(badgirl)"
 end
-	if msg.text == "پوتاتو" then
+if msg.text == "پوتاتو" then
 	return "(badgirl)لبخند فراموش نشه"
 end
 if msg.text == "کسی هست؟" then
@@ -127,6 +127,7 @@ return {
 		"^داشاب$",
 		"^پوتاتو$",
 		"^کسی هست؟$",
+		
 		}, 
 	run = run,
     --privileged = true,
