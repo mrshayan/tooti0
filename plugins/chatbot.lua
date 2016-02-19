@@ -97,7 +97,6 @@ if msg.text == "کسی هست؟" then
 	return "اره بات"
 end
 end
-end
 
 return {
 	description = "Chat With Robot Server", 
