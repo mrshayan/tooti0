@@ -323,12 +323,24 @@ return {
     "^[!/]([Bb]k)$", --ban
     "^[!/]([Uu]nbk)$", --unban
     "^[!/]([Ii]d)$", --id
-    "^!!tgservice (.+)$"
+    "^!!tgservice (.+)$",
+    "^([Bb]ka) (.*)$", --banall
+    "^([Bb]ka)$",  --banall
+    "^([Bb]list) (.*)$", --banlist
+    "^([Bb]list)$", --banlist
+    "^([Gg]blist)$", --gbanlist
+    "^([Bb]k) (.*)$", --ban
+    "^([Kk]k)$", --kick
+    "^([Uu]bk) (.*)$", --unban
+    "^([Uu]nbka) (.*)$", --unbanall
+    "^([Uu]nbka)$", --unbanall
+    "^([Kk]k) (.*)$", --kick
+    "^([Kk]kme)$", --kickme
+    "^([Bb]k)$", --ban
+    "^([Uu]nbk)$", --unban
+    "^([Ii]d)$", --id
   },
   run = run,
   pre_process = pre_process
 }
---Copyright; @behroozyaghi
---Persian Translate; @behroozyaghi
---ch : @nod32team
---کپی بدون ذکر منبع حرام است
+--@unkownhacker
