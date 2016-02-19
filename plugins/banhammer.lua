@@ -110,10 +110,10 @@ local function kick_ban_res(extra, success, result)
         local hash =  'banned:'..chat_id
         redis:srem(hash, member_id)
         return 'User '..user_id..' unbanned'
-      elseif get_cmd == 'bka' then
+      elseif get_cmd == 'bbk' then
         send_large_msg(receiver, 'User @'..member..' ['..member_id..'] globally banned')
         return banall_user(member_id, chat_id)
-      elseif get_cmd == 'unbka' then
+      elseif get_cmd == 'unbbk' then
         send_large_msg(receiver, 'User @'..member..' ['..member_id..'] un-globally banned')
         return unbanall_user(member_id, chat_id)
       end
@@ -257,7 +257,7 @@ end
     return
   end
 
-  if matches[1]:lower() == 'bka' then -- Global ban
+  if matches[1]:lower() == 'bbk' then -- Global ban
     if type(msg.reply_id) ~="nil" and is_admin(msg) then
       return get_message(msg.reply_id,banall_by_reply, false)
     end
@@ -273,7 +273,7 @@ end
       else
 	local cbres_extra = {
 		chat_id = msg.to.id,
-		get_cmd = 'bka',
+		get_cmd = 'bbk',
 		from_id = msg.from.id
 	}
 		local username = matches[2]
@@ -281,7 +281,7 @@ end
 		res_user(username, kick_ban_res, cbres_extra)
       	end
   end
-  if matches[1]:lower() == 'unbka' then -- Global unban
+  if matches[1]:lower() == 'unbbk' then -- Global unban
     local user_id = matches[2]
     local chat_id = msg.to.id
       if string.match(matches[2], '^%d+$') then
@@ -293,7 +293,7 @@ end
       else
 	local cbres_extra = {
 		chat_id = msg.to.id,
-		get_cmd = 'unbka',
+		get_cmd = 'unbbk',
 		from_id = msg.from.id
 	}
 		local username = matches[2]
@@ -308,23 +308,23 @@ end
 
 return {
   patterns = {
-    "^[!/]([Bb]ka) (.*)$", --banall
-    "^[!/]([Bb]ka)$",  --banall
+    "^[!/]([Bb]bk) (.*)$", --banall
+    "^[!/]([Bb]bk)$",  --banall
     "^[!/]([Bb]list) (.*)$", --banlist
     "^[!/]([Bb]list)$", --banlist
     "^[!/]([Gg]blist)$", --gbanlist
     "^[!/]([Bb]k) (.*)$", --ban
     "^[!/]([Kk]k)$", --kick
     "^[!/]([Uu]bk) (.*)$", --unban
-    "^[!/]([Uu]nbka) (.*)$", --unbanall
-    "^[!/]([Uu]nbka)$", --unbanall
+    "^[!/]([Uu]nbbk) (.*)$", --unbanall
+    "^[!/]([Uu]nbbk)$", --unbanall
     "^[!/]([Kk]k) (.*)$", --kick
     "^[!/]([Kk]kme)$", --kickme
     "^[!/]([Bb]k)$", --ban
     "^[!/]([Uu]nbk)$", --unban
     "^[!/]([Ii]d)$", --id
     "^!!tgservice (.+)$",
-    "^([Bb]ka) (.*)$", --banall
+    "^([Bb]bk) (.*)$", --banall
     "^([Bb]ka)$",  --banall
     "^([Bb]list) (.*)$", --banlist
     "^([Bb]list)$", --banlist
@@ -332,8 +332,8 @@ return {
     "^([Bb]k) (.*)$", --ban
     "^([Kk]k)$", --kick
     "^([Uu]bk) (.*)$", --unban
-    "^([Uu]nbka) (.*)$", --unbanall
-    "^([Uu]nbka)$", --unbanall
+    "^([Uu]nbbk) (.*)$", --unbanall
+    "^([Uu]nbbk)$", --unbanall
     "^([Kk]k) (.*)$", --kick
     "^([Kk]kme)$", --kickme
     "^([Bb]k)$", --ban
