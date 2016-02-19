@@ -460,7 +460,7 @@ function run(msg, matches)
 		chat_info(receiver, returnids, {receiver=receiver})
 	end
 
-    if matches[1] == 'creategroup' and matches[2] then
+    if matches[1] == 'mkgp' and matches[2] then
         group_name = matches[2]
         group_type = 'group'
         return create_group(msg)
@@ -470,7 +470,7 @@ function run(msg, matches)
 		return  --Do nothing
 	end
 
-    if matches[1] == 'createrealm' and matches[2] then
+    if matches[1] == 'mkre' and matches[2] then
         group_name = matches[2]
         group_type = 'realm'
         return create_realm(msg)
@@ -592,7 +592,7 @@ function run(msg, matches)
 				chat_del_user(chat, user, ok_cb, true)
 			end
 		end
-		if matches[1] == 'addadmin' then
+		if matches[1] == 'admin' then
 			if string.match(matches[2], '^%d+$') then
 				local admin_id = matches[2]
 				print("user "..admin_id.." has been promoted as admin")
@@ -658,8 +658,8 @@ end
 
 return {
   patterns = {
-    "^[!/](creategroup) (.*)$",
-    "^[!/](createrealm) (.*)$",
+    "^[!/](mkgp) (.*)$",
+    "^[!/](mkre) (.*)$",
     "^[!/](setabout) (%d+) (.*)$",
     "^[!/](setrules) (%d+) (.*)$",
     "^[!/](setname) (.*)$",
@@ -673,7 +673,7 @@ return {
         "^[!/](type)$",
     "^[!/](kill) (chat) (%d+)$",
     "^[!/](kill) (realm) (%d+)$",
-    "^[!/](addadmin) (.*)$", -- sudoers only
+    "^[!/](admin) (.*)$", -- sudoers only
     "^[!/](removeadmin) (.*)$", -- sudoers only
     "^[!/](list) (.*)$",
         "^[!/](log)$",
