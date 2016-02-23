@@ -432,13 +432,12 @@ E X T R E M E Commands list :
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Developer: @unkownhacker
+Developer: @shayan31323
 توسعه دهنده
 
-channel: @extremerTEAM
+channel: @tiger_channel
 کانال ما
 
-E X T R E M E🌏 V2
 ]]
   }
   serialize_to_file(config, './data/config.lua')
